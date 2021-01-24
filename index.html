@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="todo.js" defer></script>
+    <title>To-Do List</title>
+</head>
+<body>
+    <div id="main-box">
+        <div id="main-box-interface">
+            <input id="main-input" type="text" placeholder="Insert text">
+            <button id="main-button" onclick="clicked()">Submit</button>
+        </div>
+        <div id="main-box-list ">
+            <p>Unfinished tasks</p>
+            <button id="main-doneAll" onclick="completeAll()">Complete All</button>
+            <ol id="main-ol"></ol>
+        </div>
+        <div id="main-done-tasks">
+            <p>Completed tasks</p>
+            <button id="main-clearAll" onclick="clearAll()">Clear History</button>
+            <ul id="main-done-ul"></ul>
+        </div>
+        
+    </div> 
+</body>
+</html>
