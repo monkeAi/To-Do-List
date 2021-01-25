@@ -9,12 +9,18 @@ let tasks = JSON.parse(window.localStorage.getItem("tasks"));
 renderTasks();
 renderDoneTasks();
 
+submitInput.addEventListener("keyup", function(event) {
+    if (event.keyCode == 13) {
+        event.preventDefault();
+        submitBtn.click();
+    }
+})
+
 function clicked() {
   var inputValue = submitInput.value;
   var trimedInput = inputValue.trim();
   submitInput.value = null;
-  console.log(tasks);
-
+  
   if (trimedInput !== "") {
       tasks.push({name:inputValue, done:false});
       renderTasks();
@@ -61,8 +67,8 @@ function renderTasks() {
 }
 
 function clearAll() {
-    window.localStorage.clear();
-    location.reload();
+    tasks = [];
+    renderTasks(); 
 }
 
 function itemDone(index) {

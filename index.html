@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="scroll.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script src="todo.js" defer></script>
     <title>To-Do List</title>
@@ -10,18 +13,24 @@
 <body>
     <div id="main-box">
         <div id="main-box-interface">
-            <input id="main-input" type="text" placeholder="Insert text">
-            <button id="main-button" onclick="clicked()">Submit</button>
+            <input id="main-input" type="text" placeholder="Insert task name . . .">
+            <button id="main-button" onclick="clicked()">SUBMIT</button>
         </div>
-        <div id="main-box-list ">
-            <p>Unfinished tasks</p>
-            <button id="main-doneAll" onclick="completeAll()">Complete All</button>
-            <ol id="main-ol"></ol>
-        </div>
-        <div id="main-done-tasks">
-            <p>Completed tasks</p>
-            <button id="main-clearAll" onclick="clearAll()">Clear History</button>
-            <ul id="main-done-ul"></ul>
+        <div id="list-container">
+            <div id="main-unfinished">
+                <div id="main-box-list">
+                    <div id="div-p">UNFINISHED TASKS</div>
+                    <div id="div-ol"><ol id="main-ol"></ol></div>
+                </div>
+                <div id="div-buttonDone"><button id="main-doneAll" onclick="completeAll()">Complete All</button></div>
+            </div>
+            <div id="main-finished">
+                <div id="main-done-tasks">
+                    <div id="div-p-done">FINISHED TASKS</div>
+                    <div id="div-ul"><ul id="main-done-ul"></ul></div>
+                </div>
+                <div id="div-button-clear"><button id="main-clearAll" onclick="clearAll()" title="Beware, it will clear up everything">Clear History</button></div>
+            </div>
         </div>
         
     </div> 

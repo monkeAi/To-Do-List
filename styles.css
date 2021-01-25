@@ -1,6 +1,240 @@
-/*{
+* {
     margin: 0;
     padding: 0;
     text-decoration: none;
     list-style:none;
-}*/
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+    -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+    outline: none !important;
+    border: none;
+}
+@font-face {
+    font-family: moon;
+    src: url(fonts/Moon\ Light.otf);
+}
+
+body {
+ width:100%;
+}
+/* Main Input */
+#main-box{
+    background-color: #ff7777;
+    width:1000px;
+    height: 850px;
+    margin:0 auto;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 6px 6px 8px rgba(0, 0, 0, 20%);
+    border-radius: 25px;
+    background-image: linear-gradient(to bottom right, #ffb9fa, #92eecc);
+}
+
+#main-box-interface {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px 0px;
+}
+
+#main-input {
+    width: 660px;
+    height: 75px;
+    padding-left: 40px;
+    background-color: #ffffff;
+    border-radius: 38px;
+    font-family: 'MontSerrat';
+    font-size: 20px;
+    color: #717171;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 20%);
+}
+
+#main-button {
+    width: 150px;
+    height: 75px;
+    border-radius: 38px;
+    background-color: #fff;
+    font-size: 20px;
+    font-family: "Montserrat";
+    color: #505050;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 20%);
+    background-color: #fff;
+}
+
+/* Unfinished Tasks */
+
+#list-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#main-unfinished {
+    width: 500px;
+    height: 100%;
+}
+#main-box-list {
+    width: 100%;
+    background-image: linear-gradient(to bottom right, #bffff4, #b6bbfd);
+    border-radius: 25px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 20%);
+}
+#div-ol {
+    overflow: auto;
+    width: 100%;
+    height: 550px;
+}
+#main-box-list ol {
+    width: 100%;
+    height:100%;
+}
+#div-p {
+    text-align: center;
+    font-family: 'moon', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    padding: 20px 0;
+    color: #585858;
+}
+
+#div-buttonDone {
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+#main-doneAll {
+    width: 180px;
+    height: 33px;
+    margin-top: 10px;
+    border-radius: 25px;
+    font-family: 'Montserrat';
+    color: #4e4e4e;
+    font-size:15px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 20%);
+}
+
+
+/* Finished Tasks */
+
+#main-finished {
+    width: 350px;
+    height: 100%;
+}
+
+#main-done-tasks {
+    width: 100%;
+    height: 613px;
+    background-color: #fff;
+    border-radius: 25px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 20%);
+}
+
+#div-ul {
+    overflow: auto;
+    width: 100%;
+    height: 550px;
+}
+
+#div-p-done {
+    text-align: center;
+    font-family: 'moon', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    padding: 20px 0;
+    color: #707070;
+}
+
+#main-done-ul {
+    width: 100%;
+    height:100%;
+}
+
+#div-button-clear {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#main-clearAll {
+    width: 180px;
+    height: 33px;
+    margin-top: 10px;
+    font-family: 'Montserrat';
+    color: #4e4e4e;
+    font-size:15px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 20%);
+    border-radius: 25px;
+    background-color: #fff;
+
+}
+
+
+
+/* List Elements */
+
+#main-ol li {
+    width: 427px;
+    height: 80px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 25px;
+    
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 20%);
+    
+    
+}
+#main-ol li p {
+    width: 280px;
+    height: 60px;
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    font-family: "Montserrat";
+    font-size: 16px;
+    color: #5D5D5D;
+    
+}
+
+#main-ol button {
+    width: 81px;
+    height: 49px;
+    float: right;
+    margin-right: 21px;
+    border-radius: 20px;
+    background-color: #A776C0;
+    font-size: 16px;
+    font-family: "Montserrat";
+    color: white;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 20%);
+}
+
+#main-done-ul li {
+    width: 300px;
+    height: 60px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    background-color:#78B2BA; 
+    border-radius: 25px;   
+}
+
+#main-done-ul li p {
+    width: 300px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    font-family: "Montserrat";
+    font-size: 16px;
+    color: #fafafa;
+    overflow: hidden;
+
+}
+
