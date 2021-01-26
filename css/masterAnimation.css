@@ -1,0 +1,70 @@
+#main-box {
+    animation: fadeIn 1s ;
+}
+#main-button {
+    animation: slideRight 1s 1s both;
+}
+#main-input {
+    animation: slideRight 1s 1.5s both;
+}
+
+#main-unfinished {
+    animation: slideUp 1s 2s both;
+}
+#main-finished {
+    animation: slideUp 1s 2.5s both;
+}
+#main-ol {
+    animation: fadeIn 1s 3s both;
+}
+#main-done-ul {
+    animation: fadeIn 1s 3.5s both;
+}
+
+#main-doneAll {
+    animation: slideRight 1s 3s both;
+}
+
+#main-clearAll {
+    animation: slideRight 1s 3.5s both;
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes slideLeft {
+    0% {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(-20px);
+    }
+}
+
+@keyframes slideRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
